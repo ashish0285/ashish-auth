@@ -5,6 +5,6 @@ import express, {Router} from 'express';
 const router: Router = express.Router();
 
 export const seeedRoutes = (): Router => {
-    router.post('/seed/:count', create);
+    router.put('/seed/:count', create);
     return router;
 };
